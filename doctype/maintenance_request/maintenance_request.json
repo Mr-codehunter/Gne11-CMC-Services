@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CMC.######",
+ "creation": "2022-09-20 13:29:15.861894",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "subject",
+  "nature_of_work",
+  "details_of_required_work",
+  "justification_for_request",
+  "place_of_work",
+  "image",
+  "captiondescription_of_image",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nature_of_work",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Nature of work",
+   "options": "Carpenter\nMeason\nPainter\nElectrication\nOthers",
+   "reqd": 1
+  },
+  {
+   "fieldname": "details_of_required_work",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Details of required work",
+   "reqd": 1
+  },
+  {
+   "fieldname": "justification_for_request",
+   "fieldtype": "Data",
+   "label": "Justification for request"
+  },
+  {
+   "fieldname": "place_of_work",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Place of work",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image",
+   "reqd": 1
+  },
+  {
+   "fieldname": "captiondescription_of_image",
+   "fieldtype": "Small Text",
+   "label": "Caption/Description of image"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Maintenance Request",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-09-22 12:16:12.573517",
+ "modified_by": "Administrator",
+ "module": "Services",
+ "name": "Maintenance Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "set_user_permissions": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Website Manager",
+   "select": 1,
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
